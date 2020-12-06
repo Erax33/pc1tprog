@@ -1,0 +1,14 @@
+#pragma once
+#define length 100 
+struct s_dec {
+	char fname[length];
+	char lname[length];
+	char date[length];
+	char phone[length];
+	char tarif[length];
+	struct s_dec* next;
+};
+void add(char* fname, char* lname, char* date, char* phone, char* tarif, struct s_dec** pnt);
+void rem(char* date, struct s_dec** pnt);
+void edit();
+//void opendb();
